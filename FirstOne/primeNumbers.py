@@ -1,0 +1,48 @@
+# prime number calculator: find all primes up to n
+
+max = int(input("Find all the primes up to? : "))
+primeList = []
+
+for x in range(2, max + 1):
+	isPrime = True
+	index = 0
+	root = int(x ** 0.5) + 1
+	
+	while index < len(primeList) and primeList[index] <= root:
+		if x % primeList[index] == 0:
+			isPrime = False
+			break
+		index += 1
+			
+	if isPrime:
+		primeList.append(x)
+		
+print("There are ", len(primeList)," prime numbers up to ",max)
+print(primeList)
+	
+		
+#-------------------------------------------------------------
+# prime number calculator: find the first n primes
+
+count = int(input("Generate a list of how many primes?: "))
+primeList = []
+x = 2
+
+while len(primeList) < count:
+	isPrime = True
+	index = 0
+	root = int(x ** 0.5) + 1
+	
+	while index < len(primeList) and primeList[index] <= root:
+		if x % primeList[index] == 0:
+			isPrime = False
+			break
+		index += 1
+			
+	if isPrime:
+		primeList.append(x)
+		
+	x += 1
+		
+print("List of the first", count, " prime numbers:")
+print(primeList)

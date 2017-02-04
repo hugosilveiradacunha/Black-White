@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1ce73ead-9bc7-4832-b12b-91bcf566d466</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FirstOne.py</StartupFile>
+    <StartupFile>primeNumbers.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,34 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="dataVizBokeh.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="factorAnalysis.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="FirstOne.py" />
+    <Compile Include="constituicao.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PDF_integral.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="primeNumbers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scikit_Learn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="subplots_demo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="triplot_demo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="womenBachelors.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
